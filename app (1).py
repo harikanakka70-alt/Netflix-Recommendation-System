@@ -8,7 +8,7 @@ st.set_page_config(page_title="Netflix Recommender", page_icon="🎬")
 
 @st.cache_resource
 def load_model():
-    df = pd.read_csv("netflix_titles.csv")
+    df = pd.read_csv("netflix_titles (1).csv")
     df["content"] = (
         df["listed_in"].fillna("") + " " +
         df["description"].fillna("")
